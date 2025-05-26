@@ -1,0 +1,14 @@
+/* 设置页面背景色 */
+body {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+/* 设置按钮样式 */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
