@@ -1,8 +1,33 @@
-<div class="auth-form">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
     <meta charset="UTF-8">
-    <h2>用户登录</h2>
-    <input type="text" id="username" placeholder="用户名">
-    <input type="password" id="password" placeholder="密码">
-    <button onclick="login()">登录</button>
-    <p>没有账号？<a href="/register.html">立即注册</a></p>
-</div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>用户登录</h2>
+        <form id="login-form" action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">用户名：</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-options">
+                <label>
+                    <input type="checkbox" name="remember-me"> 记住我
+                </label>
+                <a href="/forgot-password.html">忘记密码？</a>
+            </div>
+            <button type="submit">登录</button>
+            <p class="register-link">没有账号？<a href="/register.html">立即注册</a></p>
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>
